@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?id=C93umZAYYII&key=AIzaSyDqGdVzllC-lXsGCgqIPjg15mI2AVolW-M&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Mon, 30 Sep 2013 21:48:17 GMT
+      Date:
+      - Mon, 30 Sep 2013 21:48:17 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"Agg_AJE1TyhX8kUKlYNIvjtfysI/MAq3QnA5iIbZYC1KI_XNMxPCGFg"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#videoListResponse",
+         "etag": "\"Agg_AJE1TyhX8kUKlYNIvjtfysI/MAq3QnA5iIbZYC1KI_XNMxPCGFg\"",
+         "pageInfo": {
+          "totalResults": 1,
+          "resultsPerPage": 1
+         },
+         "items": [
+          {
+           "kind": "youtube#video",
+           "etag": "\"Agg_AJE1TyhX8kUKlYNIvjtfysI/ObaPgqXgsNSRHsynHRCVsL4Ynpk\"",
+           "id": "C93umZAYYII",
+           "snippet": {
+            "publishedAt": "2013-02-11T18:30:23.000Z",
+            "channelId": "UCTAgbu2l6_rBKdbTvEodEDw",
+            "title": "REAL WORLD: Whiterun - Episode 4 (Skyrim machinima)",
+            "description": "Subscribe for More! http://goo.gl/dy9jl\nFrom creator @bryan_basham, producer of the viral \"Death and Return of Superman\" and Nerdist Channel's COPS: Skyrim, comes the next level of \"reality\" machinima set in Elder Scroll's Tamriel - The REAL WORLD: Whiterun.\n\nFeaturing Margaret Cho as the voice Lorandia.\nMusic by Ursula 1000: http://www.ursula1000.com/\n\nWatch Episode 1: http://youtu.be/lOWYUaX9jgU\nWatch Episode 2: http://youtu.be/SdWVSGHGoM0\nWatch Episode 3: http://youtu.be/wdH5FKW3Isg\n\nSee more from @bryan_basham and Adjacent Studios at http://www.adjacentla.com.  Like us on facebook.  http://www.facebook.com/adjacentla\n\nCheck out Bryan Basham's soon to come YouTube Channel on the Machinima network!  http://www.youtube.com/adjacentgames\n\nCheck out the video's Animator! @ http://www.youtube.com/tyrannicon",
+            "thumbnails": {
+             "default": {
+              "url": "https://i1.ytimg.com/vi/C93umZAYYII/default.jpg"
+             },
+             "medium": {
+              "url": "https://i1.ytimg.com/vi/C93umZAYYII/mqdefault.jpg"
+             },
+             "high": {
+              "url": "https://i1.ytimg.com/vi/C93umZAYYII/hqdefault.jpg"
+             },
+             "standard": {
+              "url": "https://i1.ytimg.com/vi/C93umZAYYII/sddefault.jpg"
+             },
+             "maxres": {
+              "url": "https://i1.ytimg.com/vi/C93umZAYYII/maxresdefault.jpg"
+             }
+            },
+            "channelTitle": "Nerdist",
+            "categoryId": "20"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Mon, 30 Sep 2013 21:48:17 GMT
+recorded_with: VCR 2.6.0
